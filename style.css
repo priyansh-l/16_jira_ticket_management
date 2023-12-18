@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-cont{
+    display: flex;
+    height: 6rem;
+    background-color: #425996;
+    justify-content: space-around;
+    align-items: center;
+    /* border-radius: 5px; */
+}
+/* flex property parent container me lagane ke 
+badd apko uske child ko dekhne ke liye width deni hogi */
+.toolbox-priority-cont
+{
+    height: 3rem;
+    background-color:#30374d;
+    width: 16rem;
+    display: flex;
+    /* justify-content main axis ke along hota hai  */
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.action-btn-cont
+{
+    height: 3rem;
+    background-color:#30374d;
+    width: 10rem;
+    display: flex;
+    /* justify-content main axis ke along hota hai  */
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.add-btn
+{
+    height: 2rem;
+    background-color:beige;
+    width: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remove-btn
+{
+    height: 2rem;
+    background-color:beige;
+    width: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* colors and hovering */
+.button
+{
+    width: 1.5rem;
+    border-radius: 5px;
+    height: 2rem;
+}
+.button:hover{
+    cursor: pointer;
+}
+.lightpink
+{
+    background-color: lightpink;
+}
+.lightblue
+{
+    background-color: lightblue;
+}
+.lightgreen
+{
+    background-color: lightgreen;
+}
+.lightgray
+{
+    background-color: lightgray;
+}
+/* modal container and main container */
+.main-cont
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 5rem;
+    justify-content: center;
+}
+.modal-cont{
+    position: absolute;
+    height: 50vh;
+    width: 45vw;
+    /* background-color: black; */
+    top: calc((100vh - 50vh) / 2);
+    left: calc((100vw - 45vw) / 2);
+    display: none;
+    border-radius: 5px;
+}
+.text-area{
+    resize: none;
+    height: 100%;
+    width: 75%;
+    outline: none;
+    border: none;
+    background-color: beige;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    }
+.color-priority-container
+{
+background-color: blue;
+height: 100%;
+display: flex;
+width: 25%;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+border-radius: 5px;
+/* width dena na bhule please verna kam nahi banega */
+}
+
+.color-priority
+{
+    height: 3.5rem;
+    width: 60%;
+    border-radius: 5px;
+}
+.color-priority:hover{
+    cursor: pointer;
+}
+.active
+{
+    border: 4px solid #000000;
+}
+/* ticket preparation and main container and storing */
+.ticket-cont
+{
+    height: 40vh;
+    width: 27vw;
+    /* background-color: black; */
+    border-radius: 5px;
+    /* overflow: auto; */
+}
+.color-stored
+{
+    height: 4vh;
+    /* background-color:yellow; */
+    margin-top: 0.5vh;
+    border-radius: 5px;
+    padding: 0.2rem;
+
+}
+.id-stored
+{
+    height: 4vh;
+    background-color:red;
+    margin-top: 0.5vh;
+    border-radius: 5px;
+    padding: 0.2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.task-stored
+{
+    height: calc(30vh - 9.5vh);
+    background-color:greenyellow;
+    margin-top: 0.5vh;
+    border-radius: 5px;
+    padding: 0.2rem;
+    overflow: hidden;
+    outline: none;
+}
+/* lock */
+.lock{
+    background-color: green;
+    border-radius: 5px;
+    margin-top: 0.5vh;
+    padding: 0.2rem;
+    /* height: 2rem; */
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+/* removal mode */
+
+/* @media screen  and (max-width:768px) and (min-width:426px)
+{
+.main-cont{
+    column-gap:10rem;
+}
+}
+@media screen  and (max-width:425px) and (min-width:376px)
+{
+    .main-cont{
+        column-gap:10rem;
+    }
+} */
